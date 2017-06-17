@@ -1,0 +1,101 @@
+*{
+	box-sizing: border-box;
+}
+
+.grid{
+	width: 100%;
+}
+
+.row{
+	width: 100%;
+}
+
+.col12{
+	width: 100%;
+}
+
+.col11{
+	width: 91.66%;
+}
+
+.col10{
+	width: 83.33%;
+}
+
+.col9{
+	width: 75%;
+}
+
+.col8{
+	width: 66.66%;
+}
+
+.col7{
+	width: 58.33%;
+}
+
+.col6{
+	width: 50%;
+}
+
+.col5{
+	width: 41.66%;
+}
+
+.col4{
+	width: 33.33%;
+}
+
+.col3{
+	width: 25%;
+}
+
+.col2{
+	width: 16.66%;
+}
+
+.col1{
+	width: 8.33%;	
+}
+
+*[class^="col"]{
+	float:left;
+}
+
+/* since all children are float left, avoid border collapsing by adding clear Fix on .grid */
+.grid:after, .row:after{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+/* show Gutter */
+*[class^="col"]{
+	padding: 20px; 
+}
+
+*[class^="col"]:last-of-type{
+	padding-right: 0px; 
+}
+
+
+
+
+
+.grid{
+	background-color: #fff;
+}
+
+*[class^="col"]{
+	border:1px solid #eee;
+	border-right: :0px;
+}
+
+*[class^="col"]:last-of-type{
+	border-right:1px solid #eee;	
+}
+
+
+
+
+
